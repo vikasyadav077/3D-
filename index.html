@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="slider-container">
+    <div id="slider">
+      <img src="img1.jpg" class="active" alt="Image 1">
+      <img src="img2.jpg" alt="Image 2">
+      <img src="img3.jpg" alt="Image 3">
+      <img src="img4.jpg" alt="Image 4">
+    </div>
+
+    <div class="buttons">
+      <button onclick="prev()">⏮ Prev</button>
+      <button onclick="next()">Next ⏭</button>
+    </div>
+
+    <div class="dots">
+      <span class="dot active-dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bg-music" src="song.mp3" autoplay loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
